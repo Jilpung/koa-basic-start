@@ -1,6 +1,6 @@
 import express from 'express';
 // import router from './routes';
-// import cors from 'cors';
+// // import cors from 'cors';
 // import passport from 'passport';
 // import { Strategy as JwtStrategy } from 'passport-jwt';
 // import { jwtOptions, verifyUser } from './middlewares/passportJwt';
@@ -12,8 +12,8 @@ const app = express();
 //   credentals: true,
 // };
 
-// app.use(cors(corsOptions));
-app.use(express.json());
+// // app.use(cors(corsOptions));
+// app.use(express.json());
 // app.use(passport.initialize());
 // passport.use(new JwtStrategy(jwtOptions, verifyUser));
 
