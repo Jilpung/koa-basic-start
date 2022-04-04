@@ -32,7 +32,7 @@ router.post('/insert', (ctx, next) => {
     ctx.response.status = 201;
     ctx.body = {
       status: 'success',
-      message: `새로운 id: ${newMovie.id}의 책이 생성`,
+      message: `새로운 id: ${newMovie.id}의 책이 생성!`,
     };
     next();
   }
