@@ -1,13 +1,13 @@
 import koa from 'koa';
-import Router from 'koa-router';
-
+import logger from 'koa-logger';
+import koaBody from 'koa-body';
 const app = new koa();
-const router = new Router();
-const api = require('./routes');
 
-router.use('/routes', api.routes());
+app.use(logger());
+app.use(koaBody());
 
-app.use(router.routes()).use(router.allowedMethods());
+const movieRouter = require('./routes/movies');
+app.use(movieRouter.routes());
 
 app.listen(4000, () => {
   console.log('port 4000');
